@@ -96,7 +96,7 @@ def hash_password(password):
 def load_users():
     default_admin = {
         "yariel": {
-            "password": hash_password("YarielY0408$"),
+            "password": hash_password(st.secrets["ADMIN_PASSWORD"]),
             "role": "admin",
             "name": "Yariel Pérez",
             "approved": True
